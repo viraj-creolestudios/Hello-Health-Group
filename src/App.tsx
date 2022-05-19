@@ -1,5 +1,4 @@
 import "./App.scss";
-import "antd/dist/antd.css";
 import Counter from "./pages/Counter/Counter";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Table from "./pages/Table/Table";

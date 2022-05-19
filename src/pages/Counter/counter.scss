@@ -19,18 +19,29 @@
       margin: 10px;
       background-color: #0a3d62;
       border-radius: 50px;
+      padding: 10px 20px;
+      color: white;
+      outline: none;
+      border: 0px;
+      font-size: large;
+      cursor: pointer;
       &:hover {
         background-color: #3c6382;
       }
     }
   }
   button {
+    cursor: pointer;
     margin: 10px;
-    background-color: #e58e26;
+    background-color: #fa8231;
     border-radius: 50px;
-
+    padding: 10px 20px;
+    color: white;
+    outline: none;
+    font-size: large;
+    border: 0px;
     &:hover {
-      background-color: #fa983a;
+      background-color: #fd9644;
     }
   }
 }

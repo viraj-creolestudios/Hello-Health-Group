@@ -1,4 +1,4 @@
-.table-container {
+.table {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -9,39 +9,63 @@
     color: #0a3d62;
     font-weight: 600;
   }
-  .ant-table {
-    border-radius: 10px;
-    overflow: hidden;
-
-    .ant-table-content {
-      th {
-        background-color: #0a3d62 !important;
-        color: white;
+  .table-container {
+    width: max-content;
+    table {
+      background: #fd9644;
+      border-collapse: collapse;
+      overflow: hidden;
+      border-radius: 20px;
+      thead {
+        tr {
+          background-color: #fa8231;
+        }
       }
-      .ant-table-tbody {
-        background-color: #82ccdd;
+      tr {
+        th,
+        td {
+          padding: 20px;
+          overflow: hidden;
+        }
       }
     }
-  }
-  .ant-pagination {
-    .ant-pagination-item-active {
-      background-color: #82ccdd !important;
-      a {
-        color: black !important;
+    .table-pagination {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin: 10px;
+      .table-pagination-button {
+        cursor: pointer;
+        margin-left: 5px;
+        padding: 10px 13px;
+        border-radius: 10px;
+        outline: none;
+        font-size: 17px;
+        border: 0px;
+        line-height: 1;
+        background: #fd9644;
+        &:hover {
+          background: #fa8231;
+        }
+      }
+      .active-page {
+        border: 1px solid;
       }
     }
   }
   .go-to-btn {
-    margin: 10px;
-    background-color: #e58e26;
-    border-radius: 50px;
-    color: black;
+    padding: 10px 20px;
+    color: white;
     outline: none;
     border: 0px;
+    font-size: large;
+    cursor: pointer;
+    margin: 10px;
+    background-color: #fa8231;
+    border-radius: 50px;
     &:hover {
       outline: none;
-      background-color: #fa983a;
-      color: black;
+      background-color: #fd9644;
     }
   }
 }

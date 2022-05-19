@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { Button } from "antd";
+import { useState } from "react";
 import "./counter.scss";
 import { useNavigate } from "react-router-dom";
 
@@ -17,16 +16,10 @@ const Counter = () => {
       <h1 className="counter-title">Counter</h1>
       <div className="counter-value">{counter}</div>
       <div className="counter-buttons">
-        <Button type="primary" onClick={handleReset}>
-          Reset Counter
-        </Button>
-        <Button type="primary" onClick={handleIncrease}>
-          Increase Counter
-        </Button>
+        <button onClick={handleReset}>Reset Counter</button>
+        <button onClick={handleIncrease}>Increase Counter</button>
       </div>
-      <Button type="primary" onClick={() => navigate("/table")}>
-        Go to Table page
-      </Button>
+      <button onClick={() => navigate("/table")}>Go to Table page</button>
     </div>
   );
 };
